@@ -11,3 +11,11 @@ body {
     color: #000000;
     transition: background-color 0.5s, color 0.5s;
 }
+
+body.dunkelmodus a {
+    color: #bb86fc;
+}
+
+body.dunkelmodus a:hover {
+    color: #ffffff;
+}
