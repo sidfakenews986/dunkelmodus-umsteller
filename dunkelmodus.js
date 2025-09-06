@@ -19,8 +19,11 @@ function loadUserPreference() {
     const preference = localStorage.getItem('darkModeActive');
     if (preference !== null) {
         darkModeActive = JSON.parse(preference);
+        const body = document.body;
         if (darkModeActive) {
-            document.body.classList.add('dark-mode');
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
         }
     }
 }
