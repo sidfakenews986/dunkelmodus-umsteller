@@ -1,26 +1,26 @@
-let dunkelmodusAktiv = false;
+let darkModeActive = false;
 
 function toggleDarkMode() {
     const body = document.body;
-    if (dunkelmodusAktiv) {
-        body.classList.remove('dunkelmodus');
+    if (darkModeActive) {
+        body.classList.remove('dark-mode');
     } else {
-        body.classList.add('dunkelmodus');
+        body.classList.add('dark-mode');
     }
-    dunkelmodusAktiv = !dunkelmodusAktiv;
+    darkModeActive = !darkModeActive;
     saveUserPreference();
 }
 
 function saveUserPreference() {
-    localStorage.setItem('dunkelmodusAktiv', dunkelmodusAktiv);
+    localStorage.setItem('darkModeActive', darkModeActive);
 }
 
 function loadUserPreference() {
-    const preference = localStorage.getItem('dunkelmodusAktiv');
+    const preference = localStorage.getItem('darkModeActive');
     if (preference !== null) {
-        dunkelmodusAktiv = (preference === 'true');
-        if (dunkelmodusAktiv) {
-            document.body.classList.add('dunkelmodus');
+        darkModeActive = (preference === 'true');
+        if (darkModeActive) {
+            document.body.classList.add('dark-mode');
         }
     }
 }
