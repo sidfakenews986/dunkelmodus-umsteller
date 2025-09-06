@@ -3,6 +3,7 @@ body.dunkelmodus {
     color: #e0e0e0;
     transition: background-color 0.5s, color 0.5s;
     padding: 15px;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,4 +11,5 @@ body {
     color: #000000;
     transition: background-color 0.5s, color 0.5s;
     padding: 15px;
+    font-family: Arial, sans-serif;
 }
