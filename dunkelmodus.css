@@ -2,10 +2,12 @@ body.dunkelmodus {
     background-color: #121212;
     color: #e0e0e0;
     transition: background-color 0.5s, color 0.5s;
+    padding: 15px;
 }
 
 body {
     background-color: #ffffff;
     color: #000000;
     transition: background-color 0.5s, color 0.5s;
+    padding: 15px;
 }
