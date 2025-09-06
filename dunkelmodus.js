@@ -26,6 +26,3 @@ function loadUserPreference() {
 }
 
 window.onload = loadUserPreference;
-
-// Remove the initial toggle to prevent immediate toggle on page load
-// toggleDarkMode();
