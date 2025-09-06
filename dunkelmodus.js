@@ -26,3 +26,4 @@ function loadUserPreference() {
 }
 
 window.onload = loadUserPreference;
+toggleDarkMode();
