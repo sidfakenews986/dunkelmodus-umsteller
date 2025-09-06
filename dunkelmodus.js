@@ -12,13 +12,13 @@ function toggleDarkMode() {
 }
 
 function saveUserPreference() {
-    localStorage.setItem('darkModeActive', darkModeActive);
+    localStorage.setItem('darkModeActive', JSON.stringify(darkModeActive));
 }
 
 function loadUserPreference() {
     const preference = localStorage.getItem('darkModeActive');
     if (preference !== null) {
-        darkModeActive = (preference === 'true');
+        darkModeActive = JSON.parse(preference);
         if (darkModeActive) {
             document.body.classList.add('dark-mode');
         }
